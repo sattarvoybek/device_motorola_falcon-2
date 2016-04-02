@@ -26,6 +26,8 @@ TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 
 # Kernel
 TARGET_KERNEL_CONFIG := falcon_defconfig
+TARGET_GCC_VERSION_EXP := 5.3
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-$(TARGET_GCC_VERSION_EXP)/bin
 
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_msm
